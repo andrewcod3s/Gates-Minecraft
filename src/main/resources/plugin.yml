@@ -1,0 +1,25 @@
+name: DrawBridge
+version: '1.0'
+main: me.geonations.drawBridge.DrawBridgePlugin
+api-version: '1.21'
+author: AndrewCodes
+description: A simple gate plugin.
+
+commands:
+  gate:
+    description: "Manage gates."
+    usage: "/<command> [create|remove|cancel]"
+    aliases: [g]
+  gateadmin:
+    description: "Admin commands for gates."
+    usage: "/<command> cleanup"
+    permission: gate.admin
+
+
+permissions:
+  gate.admin:
+    description: "Allows admin control over all gates."
+    default: op
+  drawbridge.admin:
+    description: "Allows admin control over all drawbridges."
+    default: op
